@@ -1,15 +1,27 @@
 {
-  "name": "resume-a-resume",
+  "name": "MrYao-resume",
   "version": "1.0.0",
-  "description": "This is my resume",
-  "author": " <>",
+  "description": "动态在线简历",
+  "author": "Mr.Yao <jusheng_yao@outlook.com>",
+  "license": "Apache License",
+  "homepage": ".",
+  "keywords": [
+    "python开发工程师",
+    "Ruby",
+    "PHP",
+    "后端",
+    "前端",
+    "全栈",
+    "resume",
+    "简历"
+  ],
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js"
   },
   "dependencies": {
-    "marked": "^0.3.6",
+    "marked": "^0.3.9",
     "prismjs": "^1.6.0",
     "vue": "^2.1.10"
   },
