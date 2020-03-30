@@ -27,4 +27,9 @@ npm run dev
     ```
 
 3. 开启 GitHub Pages 功能
+  将生成的目标文件public/*放在你的web服务器上。
 
+
+
+> 感谢 [jirengu-inc](https://github.com/jirengu-inc/animating-resume) 的简历工具.
+> 感谢 [zhousiwei](https://gitee.com/zhousiwei/anires) 的补充。
