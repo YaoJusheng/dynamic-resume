@@ -15,9 +15,10 @@ npm run dev
 
 
 1. 编辑 config/index.js
-
-修改第 10 行的 assetsPublicPath，值为 `项目名/dist`。
-如果你没有修改项目名 animating-resume，则可跳过此步骤。
+    ```
+    修改第 10 行的 assetsPublicPath，值为 `项目名/dist`。
+    如果你没有修改项目名 animating-resume，则可跳过此步骤。
+    ```
 
 2. 编译、上传
     ``` bash
@@ -28,9 +29,9 @@ npm run dev
     ```
 
 3. 开启 GitHub Pages 功能
-  ```
-  将生成的目标文件public/*放在你的web服务器上。
-  ```
+    ```
+    将生成的目标文件public/*放在你的web服务器上。
+    ```
 
 
 
