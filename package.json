@@ -18,7 +18,8 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "pub": "set NODE_ENV=production && webpack --config webpack-dist.config.js"
   },
   "dependencies": {
     "marked": "^0.3.9",
