@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-const { spawnSync } = require('child_process');
-const findChrome = require('chrome-finder');
+var utils = require('./build/utils')
+// const { spawnSync } = require('child_process');
+// const findChrome = require('chrome-finder');
 const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -26,7 +27,9 @@ module.exports = {
   output: {
     path: outputPath,
     publicPath: '',
-    filename: '[name]_[chunkhash:8].js',
+    // filename: '[name]_[chunkhash:8].js',
+    filename: utils.assetsPath('js/[name].[chunkhash].js'),
+    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   resolve: {
     // 加快搜索速度

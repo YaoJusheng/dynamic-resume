@@ -7,6 +7,8 @@ var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var env = config.build.env
+const fs = require('fs')
+const EndWebpackPlugin = require('end-webpack-plugin')
 
 var webpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -72,7 +74,13 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'manifest',
       chunks: ['vendor']
-    })
+    }),
+
+    new EndWebpackPlugin(async () => {
+      // 自定义域名
+      fs.writeFileSync(path.resolve(config.build.assetsRoot, 'CNAME'), 'yaojusheng.github.io');
+
+    }),
   ]
 })
 
