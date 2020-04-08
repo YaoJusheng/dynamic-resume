@@ -29,9 +29,16 @@ npm run dev
     ```
 
 3. 开启 GitHub Pages 功能
+    1）.手动上传文件
     ```
-    将生成的目标文件public/*放在你的web服务器上。
+    将生成的目标文件public/*上传到你的web服务器上。
     ```
+    2）.命令部署
+    或者新建gh-pages分支后，执行：
+    ```bash
+    npm run deploy
+    ```
+
 
 
 
