@@ -91,6 +91,9 @@ html{
 /* 现在，开始写简历 */
 `,
         `
+/*将Markdown格式翻译成HTML
+ *再对HTML加点样式
+*/
 .resumeEditor{
   padding: 2em;
 }
@@ -98,6 +101,10 @@ html{
   display: inline-block;
   border-bottom: 1px solid;
   margin: 1em 0 .5em;
+}
+.resumeEditor h2 ~ p {
+  margin: 6px 0;
+  font-style: oblique;
 }
 .resumeEditor ul,.resumeEditor ol{
   list-style: none;
@@ -113,6 +120,9 @@ html{
   counter-increment: section;
   content: counters(section, ".") " ";
   margin-right: .5em;
+}
+.resumeEditor a {
+  color: rgb(466, 165, 245);
 }
 .resumeEditor blockquote {
   margin: 1em;
@@ -150,7 +160,7 @@ Python开发工程师，全栈开发，目前在南京工作。
 + **工具环境**：pycharm、Linux
 + **相关技术**：Python、Django、Mysql、Redis、JavaScript、Ajax、HTML、JSON、VUE
 + **项目描述**：
-      本产品为少儿教育系统，分web端，APP端等，基于Django（rest-framework）框架，结合MySQL，Redis数据库，
+          本产品为少儿教育系统，分web端，APP端等，基于Django（rest-framework）框架，结合MySQL，Redis数据库，
       通过HTML+JavaScript+css样式向用户展示的学校信息，同时用户可以通过不同模块向服务器发送相应请求，
       服务器通过Ajax+JSON技术和客户端进行交互，收集用户信息，返回相应页面和信息，以供用户获取和下一步操作。 
 + **责任描述**：
@@ -166,7 +176,7 @@ Python开发工程师，全栈开发，目前在南京工作。
 + **工具环境**：pycharm、Windows
 + **相关技术**：Python、MongoDB、XML解析（xml.etree.ElementTree模块+lxml）
 + **项目描述**：
-      通过接收终端日志或xml文件（模板），多线程代码解析不同xml模板，实现dom树的创建，解析xml（命令和回显），
+          通过接收终端日志或xml文件（模板），多线程代码解析不同xml模板，实现dom树的创建，解析xml（命令和回显），
       划分节点和属性（类型字段+值），按类型存入数据库，定制匹配规则，解析日志内容，匹配命令及参数，获取回显信息，
       分析类型字段的type值，判断合法性，提取错误信息，向上层反馈，做存入文本或数据库处理，并显示，供调用。
 + **责任描述**：xml解析，Node节点查找与匹配；数据库接口编写；日志解析与反馈；
@@ -176,7 +186,7 @@ Python开发工程师，全栈开发，目前在南京工作。
 + **工具环境**：RubyMine、Windows
 + **相关技术**：ruby、sqlite、JavaScript、HTML5、CSS、Bootstrap、WLAN、802.11协议、802.1x认证协议等
 + **项目描述**：
-      根据真实终端连接WLAN信号，模拟终端设备（PC）与模拟AP交互过程来实现仿真，关联模拟AP，
+          根据真实终端连接WLAN信号，模拟终端设备（PC）与模拟AP交互过程来实现仿真，关联模拟AP，
       终端特征导入open、wap2、dhcp、dot1x等流程真实报文，数据库存储相应报文格式；新建终端sta，
       选定流程，添加相应报文格式，编辑报文内容 ，发送模拟AP，AP侧对报文处理上传AC接受控制，同时回应sta，进入下一个流程；
       终端多样化（自定义终端、镜像发包器、固定终端），可根据需要进行选型，同时对终端信息以及报文内容进行编辑自定义修改，
@@ -202,7 +212,7 @@ Python开发工程师，全栈开发，目前在南京工作。
 + **工具环境**：pycharm、Windows、notepad++
 + **相关技术**：python、XML、YAML、INI等文件解析、远程控制与网络连接
 + **项目描述**：
-      python搭建的一个PNF流水线部署工具，deploy分为四个部分：组件、子系统相关、反向集成、自动生成部署环境的配置，
+          python搭建的一个PNF流水线部署工具，deploy分为四个部分：组件、子系统相关、反向集成、自动生成部署环境的配置，
       通过对env中XML和YAML的解析，自动生成config.ini配置文件，
       通过解析配置文件，部署相应的环境。
 + **责任描述**：
@@ -231,6 +241,11 @@ Python开发工程师，全栈开发，目前在南京工作。
     &emsp;  3）[Hexo + diaspora](https://github.com/YaoJusheng/hexo-theme-diaspora) 修改和完善
     &emsp;  4）[Hexo + landscape](https://github.com/YaoJusheng/hexo-theme-landscape) 修改和完善
     &emsp;  5）[Hexo + icarus](https://github.com/YaoJusheng/hexo-theme-icarus) 修改和完善
+  + 简历（nodejs + 前端）：
+    &emsp;  1）[静态简历-resume](https://github.com/YaoJusheng/resume)
+    &emsp;  2）[静态简历-static-resume](https://github.com/YaoJusheng/static-resume)
+    &emsp;  3）[简历制作-online-resume](https://github.com/YaoJusheng/online-resume)
+    &emsp;  4）[动态简历-dynamic-resume](https://github.com/YaoJusheng/dynamic-resume)
 
 3.**系统**
 
@@ -245,7 +260,7 @@ Python开发工程师，全栈开发，目前在南京工作。
 * [我的博客1](https://blog.yaogro.cn)
 * [我的博客2](https://yaojusheng.gitee.io/blog/)
 
-> 如果你喜欢这个效果，Fork [我的项目](https://github.com/yaojusheng/animating-resume)，打造你自己的简历！
+> 如果你喜欢这个效果，Fork [我的项目](https://github.com/yaojusheng/dynamic-resume)，打造你自己的简历！
 
 `
     };

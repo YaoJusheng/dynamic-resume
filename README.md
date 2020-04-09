@@ -5,8 +5,8 @@
 ## 使用方法
 
 ``` bash
-git clone git@github.com:jirengu-inc/animating-resume.git
-cd animating-resume
+git clone https://github.com/YaoJusheng/dynamic-resume.git
+cd dynamic-resume
 npm install
 npm run dev
 ```
@@ -17,7 +17,7 @@ npm run dev
 1. 编辑 config/index.js
     ```
     修改第 10 行的 assetsPublicPath，值为 `项目名/dist`。
-    如果你没有修改项目名 animating-resume，则可跳过此步骤。
+    如果你没有修改项目名 dynamic-resume，则可跳过此步骤。
     ```
 
 2. 编译、上传
@@ -36,8 +36,8 @@ npm run dev
     ```
     
     - 2）.命令部署
-    
-    或者新建gh-pages分支后，执行：
+
+    新建gh-pages分支后，执行：
     ```bash
     npm run deploy
     ```

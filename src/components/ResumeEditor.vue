@@ -50,10 +50,15 @@ export default {
 <style scoped>
 @media (max-width: 500px) {
   .resumeEditor {
+    border: 1px solid whitesmoke;
+    overflow: auto;
   }
 }
 .htmlMode {
-  animation: flip 2s;
+  animation: flip 1s;
+  color: rgb(4, 148, 114);
+  background-color: rgb(205, 206, 207);
+  /* opacity: .9; */
 }
 
 @keyframes flip {
