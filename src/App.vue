@@ -112,6 +112,9 @@ html{
   content: counters(section, ".") " ";
   margin-right: .5em;
 }
+.resumeEditor ul> li > pre {
+  margin: 5px 0;
+}
 .resumeEditor a {
   color: rgb(66, 165, 245);
 }

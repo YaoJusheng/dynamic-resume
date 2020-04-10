@@ -113,6 +113,9 @@ html{
   content: '•';
   margin-right: .5em;
 }
+.resumeEditor ul> li > pre {
+  margin: 5px 0;
+}
 .resumeEditor ol {
   counter-reset: section;
 }
@@ -122,7 +125,7 @@ html{
   margin-right: .5em;
 }
 .resumeEditor a {
-  color: rgb(466, 165, 245);
+  color: rgb(66, 165, 245);
 }
 .resumeEditor blockquote {
   margin: 1em;
